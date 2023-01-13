@@ -1,2 +1,2 @@
-# CPSC219
+# CPSC 219
 Course code challenges
