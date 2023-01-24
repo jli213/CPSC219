@@ -53,11 +53,6 @@
             			<String fx:value="13" />
             			<String fx:value="14" />
             			<String fx:value="15" />
-            			<String fx:value="16" />
-            			<String fx:value="17" />
-            			<String fx:value="18" />
-            			<String fx:value="19" />
-            			<String fx:value="20" />
             		</FXCollections>
             	</items>
                <HBox.margin>
