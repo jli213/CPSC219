@@ -35,10 +35,8 @@ public class CodingChallenge2_1 {
 	 */
 	public static double computePolynomial(double x){
 		double answer = 3-x;
-		answer *= 3-x ;
-		System.out.println(answer);
+		answer *= 3-x;
 		answer += 4*(7+x)-9; 
-		System.out.println(answer);
 		return answer;
 	}
 	
@@ -50,7 +48,10 @@ public class CodingChallenge2_1 {
 	 * @return the result of the multiplications rounded down to the nearest integer.
 	 */
 	public static long floorAfterMult(int num1, double num2){
-		return 0l;
+		int answer;
+		answer =(int)(num1*num2);
+		
+		return answer;
 	}
 	
 	/**
@@ -62,19 +63,27 @@ public class CodingChallenge2_1 {
 	 */
 	public static int addLastFourDigits(int num){
 		// Hint: division and remainder allows you to get the right most digit and remove
-		// the right most digit from a number.
-		// Example: 997 % 10 = 7  (Remainder after division by 10.) Similarly, to remove the last
-		// digit 997 / 10 = 99 (integer division result in the whole number that results from the
-		// division.  
+				// the right most digit from a number.
+				// Example: 997 % 10 = 7  (Remainder after division by 10.) Similarly, to remove the last
+				// digit 997 / 10 = 99 (integer division result in the whole number that results from the
+				// division.  
+		int sum=0;
+		sum += num%10;
+		num = num/10;
+		sum += num%10;
+		num = num/10;
+		sum += num%10;
+		num = num/10;
+		sum += num%10;
+		num = num/10;
 		
-		return 0;
+		
+		return sum;
 	}
 
 	public static void main(String[] args) {
 		double celsius = 20.0;
-		double a = 4;
 		System.out.println(celsius + " Celsius is -- " + celsiusToFahrenheit(celsius) + " Fahrenheit.");
-		computePolynomial(a);
 	}
 
 }
